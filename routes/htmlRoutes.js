@@ -8,13 +8,15 @@ module.exports = app => {
 
   app.get('/portfolio', function (req,res) {
     res.render('portfolio', {
-      css: ['styles.css']
+      css: ['styles.css'],
+      title: 'Portfolio'
     });
   });
 
   app.get('/contact', function (req,res) {
     res.render('contact', {
-      css: ['styles.css']
+      css: ['styles.css'],
+      title: 'Contact Me'
     });
   });
 }

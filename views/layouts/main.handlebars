@@ -4,18 +4,15 @@
 <head>
   <meta charset="utf-8">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Merienda&display=swap|Indie+Flower&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
+<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  {{#each css}}
-    <link rel="stylesheet" type="text/css" href="/styles/{{this}}"/>
-  {{/each}}
+  <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
   <title>{{title}}</title>
 </head>
 
 <body>
   <div class="jumbotron mb-0">
-   <a href="/" id="devh1"><h1 class="text-center" >Tristan Harkleroad</h1></a>
+   <a href="/"><h1 class="text-center" id="devh1">Tristan Harkleroad</h1></a>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light pt-0 pb-0 pr-0 pl-0">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +20,8 @@
   </button>
   <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link pr-5 pl-5" href="../portfolio.handlebars">Logout</a>
-      <a class="nav-item nav-link pr-5 pl-5" href="../contact.handlebars">Profile</a>
+      <a class="nav-item nav-link pr-5 pl-5" href="../portfolio">Portfolio</a>
+      <a class="nav-item nav-link pr-5 pl-5" href="../contact">Contact Me</a>
       </div>
     </div>
   </nav>
@@ -36,36 +33,18 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-8">
-          <h6>About Us</h6>
-          <p class="text-justify">Duckery <i>A developer's best friend </br> </i> The rubber duck method refers to the action of talking out a problem to a rubber duck the same way
-            you would to a person. Through talking about the problem with your trusty duck, you will actually answer your own question!
-            This method is well known throughout the coding community, which is why we have created a platform for anyone to create their own virtual rubber
-            duck. We hope you enjoy it, and we ensure this method will provide stress relief and answers to your conflicts, questions, and bugs!</p>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <ul class="footer-links">
-            <h6>Other Links</h6>
-            <li><a href="https://www.hotdrop.games/"><i class="fas fa-parachute-box"></i>  Hot Drop</a></li>
-            <li><a href="https://ethanbonsignori.github.io/MenYou/"><i class="fab fa-elementor"></i>  MenYou</a></li>
-            <li><a href="https://teespring.com/stores/duckery-apparel"><i class="fas fa-tshirt"></i>  Duckery Apparel</a></li>
-            <li><a href="https://github.com/EthanBonsignori/duckery"><i class="fab fa-github-square"></i>  GitHub Repo</a></li>
-          </ul>
-        </div>
-      </div>
       <hr>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
-            <a href="#">Coding Chimps</a>
+            <a href="https://zety.com/mycv/tristanharkleroad">Tristan Harkleroad</a>
           </p>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
-    <a href="https://www.linkedin.com/in/tristan-harkleroad-4ab32a149/" class="links"><iclass="fab fa-linkedin fa-4x"></i></a>
+    <a href="https://www.linkedin.com/in/tristan-harkleroad-4ab32a149/" class="links"><i class="fab fa-linkedin fa-4x"></i></a>
     <a href="https://www.facebook.com/tristan.harkleroad" class="links"><i class="fab fa-facebook-f fa-4x"></i></a>
     <a href="https://github.com/TristanHarkleroad" class="links"><i class="fab fa-github fa-4x"></i></a>
     <a href="https://zety.com/mycv/tristanharkleroad" class="links"><i class="fas fa-user-circle fa-4x"></i></a>
@@ -77,10 +56,9 @@
 </body>
 
   <!-- jQuery -->
-  <script type="text/javascript" src="/js/imports/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
   <!-- Custom scripts -->
   {{#each js}}
     <script type="text/javascript" src="/js/{{this}}"></script>
