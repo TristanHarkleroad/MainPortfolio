@@ -107,13 +107,8 @@ body {
   padding: 10px 0px 12px 5px;
 }
 
-.links2:hover {
-  color: rgb(255, 217, 0);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
-}
-
 #linkImg {
-  padding-right: 22%;
+  margin-right: 22%;
 }
 
 #ContactMe {
@@ -244,4 +239,20 @@ input[type=color]{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.test {
+  padding-left: 10px;
+  width: 330px;
+  height: auto;   
+  -webkit-transition: width 1s;
+  transition: width .75s;
+  margin-bottom: 5%;
+}
+
+.test:hover {
+  width: 400px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
+  background: rgb(92, 86, 86);
+  border-radius: 20px 5px;
 }
